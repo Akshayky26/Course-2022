@@ -2,7 +2,6 @@ var counter=1
 var pl1score=0
 var pl2score=0
 
-
 function randomm(){
     var ran=Math.floor(Math.random()*6+1)
     var d=document.getElementById("root")
@@ -30,6 +29,4 @@ function randomm(){
         document.getElementById("pl2").innerHTML=pl2score as unknown as string
     }
     counter++
-
 }
-
