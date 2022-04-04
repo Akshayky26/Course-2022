@@ -1,12 +1,11 @@
 var array_list=new Array
 
-
 function insertion(){
     
     var A=document.getElementById('in') as HTMLInputElement
     array_list.push(parseInt(A.value))
     console.log(array_list.toString())
-    alert("The added element is : " +(A.value) )
+    alert("The added element is : " +(A.value))
   
 }
 
