@@ -49,18 +49,20 @@ var Styleddiv2=styled.div<IMydiv2>`
 export const Mydiv2:React.FC=()=>{ return <Styleddiv2 akshay={true}></Styleddiv2>}
 
 
-// If we want to apply the same properties ti many elements we use the inheritance concept
+// If we want to apply the same properties to many elements we use the inheritance concept
 
-var Styleddiv3=styled(Styleddiv2)``
+var Styleddiv3=styled(Styleddiv2)`
+    height:300px;
+    width:300px;
+`
 
-export const Mydiv3:React.FC=()=>{ return <Styleddiv2 akshay={false}></Styleddiv2>}
+export const Mydiv3:React.FC=()=>{ return <Styleddiv3 akshay={false}></Styleddiv3>}
 
 
-// We can do this in the other way also in a way that we can give the falue ie T/F when we are calling the element in the App.tsx
-//This shit is not working ask sir why only true value is being shown !!!!!!!!!
+// Just andother div to show if the value is optional 
 
 interface ICombdiv{
-    value:boolean
+    value?:boolean
 }
 
 var Combdiv=styled.div<ICombdiv>`
@@ -69,8 +71,27 @@ var Combdiv=styled.div<ICombdiv>`
     width:200px;
 `
 
-export const Diffdiv:React.FC<ICombdiv>=()=>{return <Combdiv value></Combdiv>}
+export const Diffdiv:React.FC<ICombdiv>=()=>{return <Combdiv value={true}></Combdiv>}
 
 var Combdiv2=styled(Combdiv)``
 
-export const Diffdiv2:React.FC<ICombdiv>=()=>{return <Combdiv value></Combdiv>}
+export const Diffdiv2:React.FC<ICombdiv>=()=>{return <Combdiv value={false}></Combdiv>}
+
+
+//Wanted to try if this also works !!! Try this again when you become a good coder
+
+// interface ICombdiv2{
+//     value:boolean
+// }
+
+// var Combdiv3=styled.div<ICombdiv2>`
+//     background-color: ${(props)=>{return props.value?"brown":"yellow"}};
+//     height:200px;
+//     width:200px;
+// `
+
+// export const Diffdiv3:React.FC<ICombdiv2>=(props)=>{return <Combdiv3>{props.value}</Combdiv3>}
+
+// var Combdiv4=styled(Combdiv3)``
+
+// export const Diffdiv4:React.FC<ICombdiv2>=(props)=>{return <Combdiv4>{props.value}</Combdiv4>}

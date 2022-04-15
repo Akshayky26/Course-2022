@@ -13,8 +13,8 @@ function App() {
       <Mydiv/>
       <Mydiv2/>
       <Mydiv3/>
-      <Diffdiv value={true}/>
-      <Diffdiv2 value={false}/>
+      <Diffdiv/>
+      <Diffdiv2/>
     </>
   );
 }
