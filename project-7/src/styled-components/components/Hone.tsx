@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 // this is inline CSS his is the old way of doing the things
 
-export const Hone:React.FC=()=>{return <h1 style={{backgroundColor:'red'}} >Hello this is the first heading</h1> }
+export const Hone:React.FC=()=>{return <h1 style={{backgroundColor:'red'}} >Hello this is the first heading</h1>}
 export const Htwo:React.FC=()=>{return <h2 style={{backgroundColor:'red'}} >Hello this is the first heading</h2> }
 
 
