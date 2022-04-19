@@ -26,7 +26,7 @@ const Myimg2:React.FC<IMyimg2>=(props)=>{ return <img src={props.source} alt="Se
 
 //Calling elemets in different ways
 const Elements:React.FC=()=>{
-    return <> 
+    return <>
     <h1>KTM Adventure 390</h1>
     <Myh1/>
     <Myh2 mycontent="The onroad price of the bike is 3,80,000 "/>
@@ -35,6 +35,7 @@ const Elements:React.FC=()=>{
     <Myimg2 source={adv390_2}/>
     <Myimg2 source={adv390_3}/>
     </>
+    
    
 }
 
