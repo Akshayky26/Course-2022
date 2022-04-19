@@ -18,7 +18,7 @@ switch(action.type){
         return {
             ...state,
             pending:false,
-            product:action.payload.product,
+            product:action.payload?.product,
             error:null
         }
     case FETCH_PRODUCT_FAILURE:
@@ -26,7 +26,7 @@ switch(action.type){
             ...state,
             pending:false,
             product:[],
-            error:action.payload.error
+            error:action.payload?.error
         }
     default:
         return{
